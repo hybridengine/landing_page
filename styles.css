@@ -1,73 +1,57 @@
-html {
+body {
+    display: flex;
+    flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-header{
-    background-color: #1F2937;
-    padding: 4px 256px 128px 256px;
-    text-align: center;
+.first {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 54, 88);
+    padding: 0 100px 0 100px;
+    min-height: auto
 }
 
-h1 {
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 16px 0;
+    margin-bottom: 64px;
     color: white;
 }
 
-.navigation {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    overflow: auto;
-}
-
-nav {
-    margin-left: auto;
-    font-family: "hero" sans-serif;
-    font-size: 18px;
+.logo {
+    font-weight: bold;
 }
 
 a {
-    padding: 0px 10px 0px 10px;
     text-decoration: none;
-    color: #E5E7EB;
+    margin-left: 16px;
+    color: white;
 }
 
-.container-hero {
+.welcome_content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 0;
+    gap: 48px;
+    margin-bottom: 64px;
 }
 
-.hero-text {
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.hero-statement {
-    font-family: "hero" sans-serif;
-    color: #E5E7EB;
-    font-size: 48px;
-    font-weight: bold;
-    color: #F9FAF8;
-    padding: 5px 0px 5px 0px;
-}
-
-.hero-substatement {
-    font-family: "hero" sans-serif;
-    font-size: 18px;
-    color: #E5E7EB;
-    padding: 5px 0px 5px 0px;
-}
-
-.hero-image {
-    height: auto;
+.welcome_text {
+    color: white;
 }
 
 button {
-    align-self: start;
+    background-color: rgb(22, 121, 167);
+    padding: 6px;
+}
+
+.astronaut_image {
+    min-height: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
